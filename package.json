@@ -1,0 +1,22 @@
+{
+  "name": "node-api-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
+  },
+  "dependencies": {
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^10.12.19",
+    "typescript": "^3.2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
